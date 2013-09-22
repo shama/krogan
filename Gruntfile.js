@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
   
   grunt.initConfig({
+    nodewebkit: {
+      options: {
+        build_dir: 'build_dir',
+        mac: true, win: true, linux32: true,
+      },
+      src: ['index.html', 'package.json', 'app/**/*'],
+    },
     browserify: {
       options: {
         transform: ['brfs'],

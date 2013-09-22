@@ -5,7 +5,7 @@ var path = nodeRequire('path');
 //require('bootstrap-sass');
 
 var View = require('./view')(function(filepath, data, opts) {
-  return _.template(String(fs.readFileSync(filepath)))(data, opts);
+  return _.template(String(fs.readFileSync(filepath)))(data || {}, opts || {});
 });
 var gruntfile = require('./gruntfile');
 var projects = require('./projects')();
