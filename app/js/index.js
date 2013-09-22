@@ -20,6 +20,7 @@ function loadProject(name, location) {
   document.querySelector('.project-name').innerHTML = name;
   gruntfile(path.join(location, 'Gruntfile.js'))
     .render(document.querySelector('.gruntfile'));
+  projects.active(name);
 }
 
 // Create Sidebar
@@ -38,7 +39,7 @@ nav.on('finish', function() {
   });
 
   // Click the first li
-  hrefs[0].dispatchEvent(new MouseEvent('click', { 'view': window, 'bubbles': true, 'cancelable': true }));
+  if (hrefs[0]) hrefs[0].dispatchEvent(new MouseEvent('click', { 'view': window, 'bubbles': true, 'cancelable': true }));
 });
 
 // DEBUG MODE

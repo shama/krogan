@@ -23,6 +23,9 @@ module.exports = function(grunt) {
         },
       },
     },
+    nodeunit: {
+      test: ['test/**/*_test.js'],
+    },
     watch: {
       js: { files: ['app/js/**/*.js'], tasks: ['browserify'] },
       css: { files: ['app/css/**/*.scss'], tasks: ['compass'] },

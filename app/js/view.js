@@ -26,7 +26,7 @@ module.exports = function(fn) {
     function r(el) {
       var filepath = self.name
       if (filepath.indexOf('.') === -1) filepath += self.ext
-      if (!self.data.hasOwnProperty(self.dataKey)) self.data[self.dataKey] = []
+      if (!(self.dataKey in self.data)) self.data[self.dataKey] = []
       el.innerHTML = self.renderer(filepath, self.data, self.options)
     }
     if (el.length) for (var i = 0; i < el.length; i++) r(el[i])

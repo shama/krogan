@@ -16,7 +16,8 @@
     "grunt-contrib-connect": "~0.5.0",
     "grunt-contrib-watch": "~0.5.3",
     "napa": "~0.1.1",
-    "grunt-node-webkit-builder": "~0.1.6"
+    "grunt-node-webkit-builder": "~0.1.6",
+    "grunt-contrib-nodeunit": "~0.2.0"
   },
   "dependencies": {
     "jquery2": "~2.0.3-a",
@@ -31,7 +32,9 @@
     "nodewebkit": "~0.7.5",
     "javascript-editor": "~0.2.1",
     "falafel": "~0.3.1",
-    "brfs": "0.0.8"
+    "brfs": "0.0.8",
+    "async": "~0.2.9",
+    "userhome": "~0.1.0"
   },
   "window": {
     "title": "Grunt",
