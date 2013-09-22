@@ -2,3 +2,4 @@
 node_modules/
 app.nw
 .sass-cache
+.DS_Store
