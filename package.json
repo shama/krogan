@@ -5,10 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "grunt && nodewebkit",
-    "build": "rm -rf app.nw && zip app.nw index.html package.json && /Applications/node-webkit.app/Contents/MacOS/node-webkit app.nw",
     "patch": "cd node_modules/level/node_modules/leveldown/ && nw-gyp rebuild --target=0.7.5"
   },
-  "license": "MIT",
+  "license": "GPL",
   "devDependencies": {
     "matchdep": "~0.1.2",
     "grunt-browserify": "~1.2.4",
@@ -16,7 +15,8 @@
     "grunt-contrib-compass": "~0.5.0",
     "grunt-contrib-connect": "~0.5.0",
     "grunt-contrib-watch": "~0.5.3",
-    "napa": "~0.1.1"
+    "napa": "~0.1.1",
+    "grunt-node-webkit-builder": "~0.1.6"
   },
   "dependencies": {
     "jquery2": "~2.0.3-a",
