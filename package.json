@@ -30,7 +30,8 @@
     "lodash": "~2.0.0",
     "nodewebkit": "~0.7.5",
     "javascript-editor": "~0.2.1",
-    "falafel": "~0.3.1"
+    "falafel": "~0.3.1",
+    "brfs": "0.0.8"
   },
   "window": {
     "title": "Grunt",
