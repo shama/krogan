@@ -1,0 +1,42 @@
+{
+  "name": "krogan",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "grunt && nodewebkit",
+    "build": "rm -rf app.nw && zip app.nw index.html package.json && /Applications/node-webkit.app/Contents/MacOS/node-webkit app.nw",
+    "patch": "cd node_modules/level/node_modules/leveldown/ && nw-gyp rebuild --target=0.7.5"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt-browserify": "~1.2.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "napa": "~0.1.1"
+  },
+  "dependencies": {
+    "jquery2": "~2.0.3-a",
+    "level": "~0.15.0",
+    "bootstrap-sass": "~2.3.2",
+    "level-sublevel": "~5.1.1",
+    "level-assoc": "~0.12.0",
+    "through": "~2.3.4",
+    "event-stream": "~3.0.16",
+    "hash-change": "~0.1.0",
+    "lodash": "~2.0.0",
+    "nodewebkit": "~0.7.5",
+    "javascript-editor": "~0.2.1",
+    "falafel": "~0.3.1"
+  },
+  "window": {
+    "title": "Grunt",
+    "width": 800,
+    "height": 600,
+    "frame": true,
+    "toolbar": true
+  }
+}

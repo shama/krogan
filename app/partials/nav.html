@@ -1,0 +1,7 @@
+<ul class="nav nav-list">
+  <li class="nav-header">Projects</li>
+  <% _.forEach(data, function(project) { %>
+    <li><a href="#/<%- project.key %>" data-location="<%- project.value %>" data-name="<%- project.key %>">
+      <%- project.key %></a></li>
+  <% }); %>
+</ul>
